@@ -1,0 +1,133 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+ 
+#navbar {
+    position: fixed;
+    display: flex;
+    height:15vh;
+    width: 100%;
+    background-color: rgb(245, 203, 66);
+}
+#logo > img {
+    height:15vh;
+}
+#navbar-links {
+   margin: 30px 0px auto 50px;
+}
+#navbar-links > a {
+    cursor: pointer;
+    color: white;
+    padding: 7px;
+    font-size: 15px; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(247, 148, 250);
+    box-shadow: 10px 10px 14px -8px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    margin-left: 19px;
+}
+#button {
+     margin:30px 20px auto auto;   
+}
+#button > a{
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    padding: 7px;
+    margin: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 10px 10px 14px -8px rgba(0,0,0,0.75);
+    background-color: rgb(247, 6, 6);
+    border-radius: 14px;
+ }
+ #button  a :hover {
+     border-radius: 0px;
+ }
+ #background-image {
+     height: 100vh;
+     width: 100%;
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(251,34,34,1) 35%, rgba(0,212,255,1) 100%);
+    background-blend-mode: darken;
+ }
+ #background-image > img {
+     width: 100%;
+     height: 100vh;
+     margin: 0%;
+ }
+ .title {
+     position: absolute;
+     position: fixed;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     font-size: 40px;
+     color: rgb(211, 1, 253);
+     top: 24%;
+     left: 8%;
+ }
+ .sub-title {
+     position: absolute;
+     top: 35%;
+     left: 10%;
+     font-size: 35px;
+     color: rgb(211, 1, 253);
+     position: fixed;
+ }
+ #background-image > h2:nth-child(3) {
+    margin-top: 6%;
+ }
+ #footer {
+     margin: 0px;
+     height: 50px;
+     background-color: rgb(245, 203, 66);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ #footer > a {
+     font-size: 20px;
+     margin: 0px 10px 0px 10px;
+ }
+ #footer > a > span > i {
+     margin: 5px;
+     color: blue;
+ }
+/* css code for responsive navbar */
+@media only screen and (max-width:650px) {
+    #navbar {
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #background-image > img {
+    
+        height:110vh;
+    }
+    #logo > img {
+      margin-top: 10px; 
+      width: 100%;
+    }
+    #navbar-links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 10%;
+        width: 100%;
+    }
+    #navbar-links > a {
+        margin: 10px;
+    }
+    #button {
+        display: flex;
+        margin: 0% 37% 30% auto ;
+     }
+     .title {
+         top: 70%;
+     }
+     .sub-title {
+         top:80%;
+     }
+}
+ 
+
